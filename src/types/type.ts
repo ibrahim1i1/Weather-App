@@ -8,3 +8,5 @@ export type WeatherData = {
     windSpeed: number;
     pressure: number;
 }
+
+export type BgMood = 'dark' | 'light';
