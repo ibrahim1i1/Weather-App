@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+Live Weather Card - Real-Time Weather Widget 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, lightweight, and modern real-time weather widget built with React, TypeScript, and Tailwind CSS. Designed for clean state management, instant city search via geocoding, live atmospheric metrics via Open-Meteo API, and theme persistence using localStorage.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live URL: https://weather-app-tau-dusky-27.vercel.app/
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Real-Time Weather Metrics: Fetches up-to-date atmospheric conditions including temperature, feels-like metrics, humidity percentage, wind speed, and surface pressure.
 
-## Expanding the ESLint configuration
+Dynamic City Search: Automatically maps city names worldwide to coordinates using the Open-Meteo Geocoding API.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Dual Theme Switcher: Smooth toggle between a stone Dark Mode and a vibrant Sky-Blue Light Mode using Lucide icons.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Theme Persistence: Stores user theme choice in localStorage to preserve visual preferences across browser reloads.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Strict Type Safety: Strongly typed props, state interfaces, and API responses built with TypeScript.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Responsive Layout: Compact, centered widget layout tailored for seamless interaction on mobile and desktop screens.
 
-```
+🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Framework: React + Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Language: TypeScript
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Styling: Tailwind CSS
 
-```
+Icons: Lucide React
+
+API / Data: Open-Meteo API
+
+Deployment: Vercel
+
+📦 Getting Started
+
+To run this project locally:
+
+Clone the repository:
+
+git clone https://github.com/ibrahim1i1/weather-App.git
+
+
+Navigate into the directory:
+
+cd weather-App
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+📝 License
+
+This project is open-source and available under the MIT License.
