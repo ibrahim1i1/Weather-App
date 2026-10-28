@@ -24,7 +24,7 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem('weather_mood', mood)
-  })
+  }, [mood])
 
   const toggleMood = () => {
     setMood((prev) => (prev === 'dark' ? 'light' : 'dark'));
